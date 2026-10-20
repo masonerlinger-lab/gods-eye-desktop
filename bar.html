@@ -1,0 +1,9 @@
+<!doctype html><meta charset=utf-8><style>
+html,body{margin:0;height:30px;background:#070b11;color:#8fb;font:12px Segoe UI,sans-serif;user-select:none;overflow:hidden}
+#b{display:flex;height:30px;align-items:center;-webkit-app-region:drag;border-bottom:1px solid #12303a}
+.t{font-weight:600;letter-spacing:2px;padding:0 14px;color:#5fe0ff;text-transform:uppercase}
+button{-webkit-app-region:no-drag;background:none;border:0;color:#7a9;height:30px;padding:0 16px;font:inherit;cursor:pointer}
+button:hover{background:#10202a}.sp{flex:1}.x:hover{background:#c42b1c;color:#fff}
+</style><div id=b><span class=t id=t></span><span class=sp></span>
+<button onclick="api.win('min')">&#8211;</button><button onclick="api.win('max')">&#9633;</button><button class=x onclick="api.win('x')">&#10005;</button></div>
+<script>document.getElementById('t').textContent=new URLSearchParams(location.search).get('t')</script>
